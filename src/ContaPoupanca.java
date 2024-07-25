@@ -1,13 +1,23 @@
-
+/**
+ * Classe que representa uma conta poupança, herdando da classe Conta.
+ */
 public class ContaPoupanca extends Conta {
 
-	public ContaPoupanca(Cliente cliente) {
-		super(cliente);
-	}
+    /**
+     * Construtor da classe ContaPoupança.
+     * 
+     * @param cliente Cliente associado à conta.
+     */
+    public ContaPoupanca(Cliente cliente) {
+        super(cliente);
+    }
 
-	@Override
-	public void imprimirExtrato() {
-		System.out.println("=== Extrato Conta Poupan�a ===");
-		super.imprimirInfosComuns();
-	}
+    /**
+     * Imprime o extrato da conta poupança.
+     */
+    @Override
+    public void imprimirExtrato() {
+        System.out.println("=== Extrato Conta Poupança ===");
+        super.imprimirInfosComuns();
+    }
 }

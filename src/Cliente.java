@@ -1,14 +1,26 @@
-
+/**
+ * Classe que representa um cliente, contendo um nome.
+ */
 public class Cliente {
 
-	private String nome;
+    private String nome;
 
-	public String getNome() {
-		return nome;
-	}
+    /**
+     * Retorna o nome do cliente.
+     * 
+     * @return Nome do cliente.
+     */
+    public String getNome() {
+        return nome;
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    /**
+     * Define o nome do cliente.
+     * 
+     * @param nome Novo nome do cliente.
+     */
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
 }

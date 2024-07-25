@@ -1,24 +1,47 @@
 import java.util.List;
 
+/**
+ * Classe que representa um banco, contendo um nome e uma lista de contas.
+ */
 public class Banco {
 
-	private String nome;
-	private List<Conta> contas;
+    private String nome;
+    private List<Conta> contas;
 
-	public String getNome() {
-		return nome;
-	}
+    /**
+     * Retorna o nome do banco.
+     * 
+     * @return Nome do banco.
+     */
+    public String getNome() {
+        return nome;
+    }
 
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
+    /**
+     * Define o nome do banco.
+     * 
+     * @param nome Novo nome do banco.
+     */
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-	public List<Conta> getContas() {
-		return contas;
-	}
+    /**
+     * Retorna a lista de contas do banco.
+     * 
+     * @return Lista de contas.
+     */
+    public List<Conta> getContas() {
+        return contas;
+    }
 
-	public void setContas(List<Conta> contas) {
-		this.contas = contas;
-	}
+    /**
+     * Define a lista de contas do banco.
+     * 
+     * @param contas Nova lista de contas.
+     */
+    public void setContas(List<Conta> contas) {
+        this.contas = contas;
+    }
 
 }

@@ -1,18 +1,22 @@
-# Criando um Banco Digital com Java e Orientação a Objetos
+## README.md
 
-## 02/08/2021 - [Mentoria #1: Tire Suas Dúvidas Sobre Orientação a Objetos](https://www.youtube.com/watch?v=YS6ouOhkyNI)
+# Sistema Bancário Simples
 
-Desafio: Considerando nosso conhecimento no domínio bancário, iremos abstrair uma solução Orientada a Objetos em Java. Para isso, vamos interpretar o seguinte cenário:
-“Um banco oferece aos seus clientes dois tipos de contas (corrente e poupança), as quais possuem as funcionalidades de depósito, saque e transferência (entre contas da própria instituição).”
+Este projeto é um sistema bancário simples implementado em Java, com o objetivo de demonstrar conceitos básicos de programação orientada a objetos.
 
-### Abstração
-Habilidade de concentrar-se nos aspectos essenciais de um domínio, ignorando características menos importantes ou acidentais. Nesse contexto, objetos são abstrações de entidades existentes no domínio em questão.
+## Funcionamento
 
-### Encapsulamento
-Encapsular significa esconder a implementação dos objetos, criando assim interfaces de uso mais concisas e fáceis de usar/entender. O encapsulamento favorece principalmente dois aspectos de um sistema: a manutenção e a evolução.
+O sistema consiste em:
 
-### Herança
-Permite que você defina uma classe filha que reutiliza (herda), estende ou modifica o comportamento de uma classe pai. A classe cujos membros são herdados é chamada de classe base. A classe que herda os membros da classe base é chamada de classe derivada.
+- **Banco:** Uma classe que representa um banco com nome e uma lista de contas.
+- **Cliente:** Uma classe que representa um cliente com nome.
+- **Conta:** Uma classe abstrata que representa uma conta bancária, com atributos como agência, número, saldo e cliente. Implementa a interface IConta, definindo métodos para sacar, depositar, transferir e imprimir extrato.
+- **ContaCorrente:** Uma classe que representa uma conta corrente, herdando da classe Conta.
+- **ContaPoupança:** Uma classe que representa uma conta poupança, herdando da classe Conta.
+- **IConta:** Uma interface que define os métodos básicos de uma conta bancária.
 
-### Polimorfismo
-Capacidade de um objeto poder ser referenciado de várias formas, ou seja, é capacidade de tratar objetos criados a partir das classes específicas como objetos de uma classe genérica. Cuidado, polimorfismo não quer dizer que o objeto fica se transformando, muito pelo contrário, um objeto nasce de um tipo e morre daquele tipo, o que pode mudar é a maneira como nos referimos a ele.
+O sistema permite criar clientes, contas correntes e contas poupanças, realizar operações de depósito, saque e transferência entre contas, e imprimir extratos de cada conta.
+
+## Execução
+
+Para executar o sistema, basta compilar e executar a classe Main.java.
